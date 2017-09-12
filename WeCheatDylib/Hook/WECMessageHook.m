@@ -32,18 +32,22 @@ CHOptimizedMethod1(self, void, CMessageMgr, onRevokeMsg, CMessageWrap*, msgWrap)
         revokePersonName = [msgWrap.m_nsContent substringWithRange:[result rangeAtIndex:1]];
     }
     
-    NSString* sendContent = [NSString stringWithFormat:@"%@ 撤回了消息，可是冬瓜拦截住了！没想到还有这种操作吧。😎", revokePersonName ? revokePersonName : msgWrap.m_nsFromUsr];
+    NSString* sendContent = @"";
     
-    NSLog(@"revokePerson: %@", revokePersonName);
-    NSLog(@"m_nsFromUsr: %@", msgWrap.m_nsFromUsr);
-    
-    [newMsgWrap setM_uiStatus:0x4];
-    [newMsgWrap setM_nsContent:sendContent];
-    [newMsgWrap setM_nsToUsr:msgWrap.m_nsToUsr];
-    [newMsgWrap setM_nsFromUsr:msgWrap.m_nsFromUsr];
-    [newMsgWrap setM_uiCreateTime:[msgWrap m_uiCreateTime]];
-    
-    [[WeChatServiceManager sharedCMessageMgr] AddLocalMsg:msgWrap.m_nsFromUsr MsgWrap:newMsgWrap];
+    if([revokePersonName isEqualToString:@"你"] != YES) {
+        sendContent = [NSString stringWithFormat:@"%@ 撤回了消息，可是冬瓜拦截住了！没想到还有这种操作吧。😎", revokePersonName ? revokePersonName : msgWrap.m_nsFromUsr];
+        
+        NSLog(@"revokePerson: %@", revokePersonName);
+        NSLog(@"m_nsFromUsr: %@", msgWrap.m_nsFromUsr);
+        
+        [newMsgWrap setM_uiStatus:0x3];
+        [newMsgWrap setM_nsContent:sendContent];
+        [newMsgWrap setM_nsToUsr:msgWrap.m_nsToUsr];
+        [newMsgWrap setM_nsFromUsr:msgWrap.m_nsFromUsr];
+        [newMsgWrap setM_uiCreateTime:[msgWrap m_uiCreateTime]];
+        
+        [[WeChatServiceManager sharedCMessageMgr] AddLocalMsg:msgWrap.m_nsFromUsr MsgWrap:newMsgWrap];
+    }
 }
 
 CHConstructor {

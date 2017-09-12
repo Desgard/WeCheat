@@ -11,6 +11,6 @@
 
 @interface WeChatServiceManager : NSObject
 
-+(CMessageMgr*)sharedCMessageMgr;
++ (CMessageMgr *)sharedCMessageMgr;
 
 @end

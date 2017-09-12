@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7590C91E1F678CAE00E1184B /* WECUIFindHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 7590C91D1F678CAE00E1184B /* WECUIFindHook.m */; };
+		7590C9201F678CB300E1184B /* WECSportStepHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 7590C91F1F678CB300E1184B /* WECSportStepHook.m */; };
 		75D4FF891F676A1900CACDD6 /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = 75D4FF881F676A1900CACDD6 /* put ipa or app here */; };
 		75D4FF931F676A1900CACDD6 /* Cycript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D4FF921F676A1900CACDD6 /* Cycript.framework */; };
 		75D4FF951F676A1900CACDD6 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D4FF941F676A1900CACDD6 /* JavaScriptCore.framework */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7590C91D1F678CAE00E1184B /* WECUIFindHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WECUIFindHook.m; path = Hook/WECUIFindHook.m; sourceTree = "<group>"; };
+		7590C91F1F678CB300E1184B /* WECSportStepHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WECSportStepHook.m; path = Hook/WECSportStepHook.m; sourceTree = "<group>"; };
 		75D4FF841F676A1900CACDD6 /* WeCheat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeCheat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D4FF881F676A1900CACDD6 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
 		75D4FF8A1F676A1900CACDD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -183,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				75D4FFC51F676CB100CACDD6 /* WECMessageHook.m */,
+				7590C91F1F678CB300E1184B /* WECSportStepHook.m */,
+				7590C91D1F678CAE00E1184B /* WECUIFindHook.m */,
 			);
 			name = Hook;
 			sourceTree = "<group>";
@@ -359,9 +365,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				75D4FFC41F676C7D00CACDD6 /* WeChatpluginConfig.m in Sources */,
+				7590C91E1F678CAE00E1184B /* WECUIFindHook.m in Sources */,
 				75D4FFA71F676A1900CACDD6 /* fishhook.c in Sources */,
 				75D4FFC61F676CB100CACDD6 /* WECMessageHook.m in Sources */,
 				75D4FFCA1F676D6600CACDD6 /* WeChatServiceManager.m in Sources */,
+				7590C9201F678CB300E1184B /* WECSportStepHook.m in Sources */,
 				75D4FFA41F676A1900CACDD6 /* AntiAntiDebug.m in Sources */,
 				75D4FFB01F676A1900CACDD6 /* WeCheatDylib.m in Sources */,
 				75D4FFAC1F676A1900CACDD6 /* WeCheatDylib.mm in Sources */,

@@ -12,7 +12,7 @@
 
 @implementation WeChatServiceManager
 
-+(CMessageMgr *)sharedCMessageMgr{
++ (CMessageMgr *)sharedCMessageMgr{
     MMServiceCenter* serviceCenter = [objc_getClass("MMServiceCenter") defaultCenter];
     return [serviceCenter getService:[objc_getClass("CMessageMgr") class]];
 }
