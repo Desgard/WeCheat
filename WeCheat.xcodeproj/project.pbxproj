@@ -30,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7556FC321F67D69F0008D6F1 /* WeChatUIHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WeChatUIHeader.h; path = Header/WeChatUIHeader.h; sourceTree = "<group>"; };
 		7590C91D1F678CAE00E1184B /* WECUIFindHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WECUIFindHook.m; path = Hook/WECUIFindHook.m; sourceTree = "<group>"; };
 		7590C91F1F678CB300E1184B /* WECSportStepHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WECSportStepHook.m; path = Hook/WECSportStepHook.m; sourceTree = "<group>"; };
 		75D4FF841F676A1900CACDD6 /* WeCheat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeCheat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				75D4FFC01F676C3900CACDD6 /* WeChatHeader.h */,
+				7556FC321F67D69F0008D6F1 /* WeChatUIHeader.h */,
 			);
 			name = Header;
 			sourceTree = "<group>";

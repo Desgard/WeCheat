@@ -49,8 +49,10 @@
 
 @interface ManualAuthAesReqData
 
--(void)setBundleId:(NSString*) bundleID;
+- (void)setBundleId:(NSString*) bundleID;
 
 @end
+
+
 
 #endif /* WeChatHeader_h */

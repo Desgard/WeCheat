@@ -12,6 +12,7 @@
 
 CHDeclareClass(CMessageMgr);
 
+// 防撤回方法
 CHOptimizedMethod1(self, void, CMessageMgr, onRevokeMsg, CMessageWrap*, msgWrap){
     BOOL isSender = [objc_getClass("CMessageWrap") isSenderFromMsgWrap:msgWrap];
     
@@ -54,3 +55,6 @@ CHConstructor {
     CHLoadLateClass(CMessageMgr);
     CHClassHook1(CMessageMgr, onRevokeMsg);
 }
+
+// 对自己下命令
+
