@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "WeChatHeader.h"
+#import "WeChatUIHeader.h"
 
 @interface WeChatServiceManager : NSObject
 
++ (instancetype)shareManager;
+
 + (CMessageMgr *)sharedCMessageMgr;
+- (void)sayTest;
 
 @end

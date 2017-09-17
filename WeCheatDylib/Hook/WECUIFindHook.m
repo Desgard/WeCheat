@@ -10,15 +10,24 @@
 #import "CaptainHook.h"
 #import <UIKit/UIKit.h>
 #import <Cycript/Cycript.h>
+#import "WeChatServiceManager.h"
+
+#import "WeChatUIHeader.h"
 
 CHDeclareClass(AddContactToChatRoomViewController);
 
-@class MMTableViewInfo;
-
 CHOptimizedMethod0(self, void, AddContactToChatRoomViewController, reloadTableData) {
     CHSuper0(AddContactToChatRoomViewController, reloadTableData);
-//    MMTableViewInfo *tableInfo = [self valueForKeyPath: @"m_tableViewInfo"];
-//    NSLog(@"%@", tableInfo);
+    MMTableViewInfo *tableInfo = CHIvar(self, m_tableViewInfo, __strong MMTableViewInfo *);
+    NSLog(@"%@", tableInfo);
+    MMTableViewSectionInfo *sectionInfo = [tableInfo getSectionAt: 2];
+    MMTableViewCellInfo *ignoreCellInfo = [objc_getClass("MMTableViewCellInfo") switchCellForSel:@selector(sayTest)
+                                                                                          target:[WeChatServiceManager shareManager]
+                                                                                           title:@"无视这个智障"
+                                                                                              on:NO];
+    [sectionInfo addCell:ignoreCellInfo];
+    MMTableView *tableView = [tableInfo getTableView];
+    [tableView reloadData];
 }
 
 CHConstructor {
