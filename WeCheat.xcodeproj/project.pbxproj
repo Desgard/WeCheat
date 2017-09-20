@@ -27,6 +27,7 @@
 		75D4FFC61F676CB100CACDD6 /* WECMessageHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D4FFC51F676CB100CACDD6 /* WECMessageHook.m */; };
 		75D4FFC91F676D6600CACDD6 /* WeChatServiceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 75D4FFC71F676D6600CACDD6 /* WeChatServiceManager.h */; };
 		75D4FFCA1F676D6600CACDD6 /* WeChatServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D4FFC81F676D6600CACDD6 /* WeChatServiceManager.m */; };
+		D5A140501F72C2B500820F0A /* WECUINightModeHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A1404F1F72C2B500820F0A /* WECUINightModeHook.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		75D4FFC51F676CB100CACDD6 /* WECMessageHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WECMessageHook.m; path = Hook/WECMessageHook.m; sourceTree = "<group>"; };
 		75D4FFC71F676D6600CACDD6 /* WeChatServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeChatServiceManager.h; path = Manager/WeChatServiceManager.h; sourceTree = "<group>"; };
 		75D4FFC81F676D6600CACDD6 /* WeChatServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeChatServiceManager.m; path = Manager/WeChatServiceManager.m; sourceTree = "<group>"; };
+		D5A1404F1F72C2B500820F0A /* WECUINightModeHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WECUINightModeHook.m; path = Hook/WECUINightModeHook.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				75D4FFC51F676CB100CACDD6 /* WECMessageHook.m */,
 				7590C91F1F678CB300E1184B /* WECSportStepHook.m */,
 				7590C91D1F678CAE00E1184B /* WECUIFindHook.m */,
+				D5A1404F1F72C2B500820F0A /* WECUINightModeHook.m */,
 			);
 			name = Hook;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5A140501F72C2B500820F0A /* WECUINightModeHook.m in Sources */,
 				75D4FFC41F676C7D00CACDD6 /* WeChatpluginConfig.m in Sources */,
 				7590C91E1F678CAE00E1184B /* WECUIFindHook.m in Sources */,
 				75D4FFA71F676A1900CACDD6 /* fishhook.c in Sources */,

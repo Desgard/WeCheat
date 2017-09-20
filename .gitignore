@@ -53,3 +53,5 @@ Carthage/Build
 fastlane/report.xml
 fastlane/screenshots
 
+# Monkey Dev
+WeCheatDylib/WeCheatDylib.mm
