@@ -27,6 +27,7 @@
 		75D4FFC61F676CB100CACDD6 /* WECMessageHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D4FFC51F676CB100CACDD6 /* WECMessageHook.m */; };
 		75D4FFC91F676D6600CACDD6 /* WeChatServiceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 75D4FFC71F676D6600CACDD6 /* WeChatServiceManager.h */; };
 		75D4FFCA1F676D6600CACDD6 /* WeChatServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D4FFC81F676D6600CACDD6 /* WeChatServiceManager.m */; };
+		75D7534D1F87790200EF7858 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75D7534C1F87790200EF7858 /* Default-568h@2x.png */; };
 		D5A140501F72C2B500820F0A /* WECUINightModeHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A1404F1F72C2B500820F0A /* WECUINightModeHook.m */; };
 /* End PBXBuildFile section */
 
@@ -52,13 +53,14 @@
 		75D4FFAB1F676A1900CACDD6 /* WeCheatDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WeCheatDylib.mm; sourceTree = "<group>"; };
 		75D4FFAD1F676A1900CACDD6 /* WeCheatDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeCheatDylib.h; sourceTree = "<group>"; };
 		75D4FFAF1F676A1900CACDD6 /* WeCheatDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeCheatDylib.m; sourceTree = "<group>"; };
-		75D4FFBB1F676AAF00CACDD6 /* wechat-6.5.15.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; name = "wechat-6.5.15.ipa"; path = "TargetApp/wechat-6.5.15.ipa"; sourceTree = "<group>"; };
+		75D4FFBB1F676AAF00CACDD6 /* wechat.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; name = wechat.ipa; path = TargetApp/wechat.ipa; sourceTree = "<group>"; };
 		75D4FFC01F676C3900CACDD6 /* WeChatHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeChatHeader.h; path = Header/WeChatHeader.h; sourceTree = "<group>"; };
 		75D4FFC11F676C7D00CACDD6 /* WeChatpluginConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeChatpluginConfig.h; path = Config/WeChatpluginConfig.h; sourceTree = "<group>"; };
 		75D4FFC21F676C7D00CACDD6 /* WeChatpluginConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeChatpluginConfig.m; path = Config/WeChatpluginConfig.m; sourceTree = "<group>"; };
 		75D4FFC51F676CB100CACDD6 /* WECMessageHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WECMessageHook.m; path = Hook/WECMessageHook.m; sourceTree = "<group>"; };
 		75D4FFC71F676D6600CACDD6 /* WeChatServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeChatServiceManager.h; path = Manager/WeChatServiceManager.h; sourceTree = "<group>"; };
 		75D4FFC81F676D6600CACDD6 /* WeChatServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeChatServiceManager.m; path = Manager/WeChatServiceManager.m; sourceTree = "<group>"; };
+		75D7534C1F87790200EF7858 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D5A1404F1F72C2B500820F0A /* WECUINightModeHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WECUINightModeHook.m; path = Hook/WECUINightModeHook.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 		75D4FF7A1F676A1900CACDD6 = {
 			isa = PBXGroup;
 			children = (
+				75D7534C1F87790200EF7858 /* Default-568h@2x.png */,
 				75D4FF861F676A1900CACDD6 /* WeCheat */,
 				75D4FF9C1F676A1900CACDD6 /* WeCheatDylib */,
 				75D4FF911F676A1900CACDD6 /* Frameworks */,
@@ -116,7 +119,7 @@
 		75D4FF871F676A1900CACDD6 /* TargetApp */ = {
 			isa = PBXGroup;
 			children = (
-				75D4FFBB1F676AAF00CACDD6 /* wechat-6.5.15.ipa */,
+				75D4FFBB1F676AAF00CACDD6 /* wechat.ipa */,
 				75D4FF881F676A1900CACDD6 /* put ipa or app here */,
 			);
 			name = TargetApp;
@@ -250,6 +253,7 @@
 				75D4FF801F676A1900CACDD6 /* Frameworks */,
 				75D4FF811F676A1900CACDD6 /* Resources */,
 				75D4FF821F676A1900CACDD6 /* ShellScript */,
+				750149E51F87828D00D3BC08 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -284,7 +288,7 @@
 		75D4FF7B1F676A1900CACDD6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Harry Twan";
 				TargetAttributes = {
 					75D4FF831F676A1900CACDD6 = {
@@ -323,12 +327,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				75D4FF891F676A1900CACDD6 /* put ipa or app here in Resources */,
+				75D7534D1F87790200EF7858 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		750149E51F87828D00D3BC08 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
 		75D4FF821F676A1900CACDD6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -395,7 +413,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -403,7 +423,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -443,7 +467,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -451,7 +477,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -508,6 +538,8 @@
 		75D4FFB71F676A1900CACDD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNL5G5M9A8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -552,6 +584,7 @@
 					"-lsubstrate",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = NO;
 			};
@@ -560,6 +593,8 @@
 		75D4FFB81F676A1900CACDD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = DNL5G5M9A8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -604,6 +639,7 @@
 					"-lsubstrate",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
