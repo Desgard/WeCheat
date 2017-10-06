@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5AE6F0A1F87DF8E00F48E69 /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5AE6F091F87DF8E00F48E69 /* MethodTraceConfig.plist */; };
+		D5AE6F0D1F87DF8E00F48E69 /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = D5AE6F0C1F87DF8E00F48E69 /* put ipa or app here */; };
+		D5AE6F151F87DF8E00F48E69 /* libWeCheatDevDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D5AE6F141F87DF8E00F48E69 /* libWeCheatDevDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D5AE6F1A1F87DF8E00F48E69 /* Cycript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AE6F191F87DF8E00F48E69 /* Cycript.framework */; };
+		D5AE6F1C1F87DF8E00F48E69 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AE6F1B1F87DF8E00F48E69 /* JavaScriptCore.framework */; };
+		D5AE6F1E1F87DF8E00F48E69 /* RevealServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AE6F1D1F87DF8E00F48E69 /* RevealServer.framework */; };
+		D5AE6F201F87DF8E00F48E69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AE6F1F1F87DF8E00F48E69 /* Foundation.framework */; };
+		D5AE6F221F87DF8E00F48E69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AE6F211F87DF8E00F48E69 /* UIKit.framework */; };
+		D5AE6F261F87DF8E00F48E69 /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AE6F251F87DF8E00F48E69 /* ANYMethodLog.h */; };
+		D5AE6F281F87DF8E00F48E69 /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AE6F271F87DF8E00F48E69 /* ANYMethodLog.m */; };
+		D5AE6F2A1F87DF8E00F48E69 /* MethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AE6F291F87DF8E00F48E69 /* MethodTrace.h */; };
+		D5AE6F2C1F87DF8E00F48E69 /* MethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AE6F2B1F87DF8E00F48E69 /* MethodTrace.m */; };
+		D5AE6F311F87DF8E00F48E69 /* CaptainHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AE6F301F87DF8E00F48E69 /* CaptainHook.h */; };
+		D5AE6F341F87DF8E00F48E69 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AE6F331F87DF8E00F48E69 /* AntiAntiDebug.m */; };
+		D5AE6F371F87DF8E00F48E69 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = D5AE6F361F87DF8E00F48E69 /* fishhook.c */; };
+		D5AE6F391F87DF8E00F48E69 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AE6F381F87DF8E00F48E69 /* fishhook.h */; };
+		D5AE6F3C1F87DF8E00F48E69 /* WeCheatDevDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5AE6F3B1F87DF8E00F48E69 /* WeCheatDevDylib.mm */; };
+		D5AE6F3E1F87DF8E00F48E69 /* WeCheatDevDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AE6F3D1F87DF8E00F48E69 /* WeCheatDevDylib.h */; };
+		D5AE6F401F87DF8E00F48E69 /* WeCheatDevDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AE6F3F1F87DF8E00F48E69 /* WeCheatDevDylib.m */; };
+		D5AE6F4A1F87DFB600F48E69 /* wechat.ipa in Resources */ = {isa = PBXBuildFile; fileRef = D5AE6F491F87DFB600F48E69 /* wechat.ipa */; };
+		D5AE6F4E1F87DFD700F48E69 /* WeChatHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AE6F4C1F87DFD700F48E69 /* WeChatHeader.h */; };
+		D5AE6F4F1F87DFD700F48E69 /* WeChatUIHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AE6F4D1F87DFD700F48E69 /* WeChatUIHeader.h */; };
+		D5AE6F551F87DFE300F48E69 /* WECMessageHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AE6F511F87DFE200F48E69 /* WECMessageHook.m */; };
+		D5AE6F561F87DFE300F48E69 /* WECSportStepHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AE6F521F87DFE200F48E69 /* WECSportStepHook.m */; };
+		D5AE6F571F87DFE300F48E69 /* WECUIFindHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AE6F531F87DFE200F48E69 /* WECUIFindHook.m */; };
+		D5AE6F581F87DFE300F48E69 /* WECUINightModeHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AE6F541F87DFE200F48E69 /* WECUINightModeHook.m */; };
+		D5AE6F5C1F87DFED00F48E69 /* WeChatServiceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AE6F5A1F87DFED00F48E69 /* WeChatServiceManager.h */; };
+		D5AE6F5D1F87DFED00F48E69 /* WeChatServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AE6F5B1F87DFED00F48E69 /* WeChatServiceManager.m */; };
+		D5AE6F611F87DFFD00F48E69 /* WeChatpluginConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AE6F5F1F87DFFD00F48E69 /* WeChatpluginConfig.h */; };
+		D5AE6F621F87DFFD00F48E69 /* WeChatpluginConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AE6F601F87DFFD00F48E69 /* WeChatpluginConfig.m */; };
+		D5AE6F651F87E0A900F48E69 /* WeCheatConfigCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AE6F631F87E0A900F48E69 /* WeCheatConfigCenter.h */; };
+		D5AE6F661F87E0A900F48E69 /* WeCheatConfigCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AE6F641F87E0A900F48E69 /* WeCheatConfigCenter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5AE6F161F87DF8E00F48E69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5AE6EFB1F87DF8E00F48E69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5AE6F131F87DF8E00F48E69;
+			remoteInfo = WeCheatDevDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D5AE6F031F87DF8E00F48E69 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D5AE6F151F87DF8E00F48E69 /* libWeCheatDevDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D5AE6F061F87DF8E00F48E69 /* WeCheatDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeCheatDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5AE6F091F87DF8E00F48E69 /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MethodTraceConfig.plist; sourceTree = "<group>"; };
+		D5AE6F0C1F87DF8E00F48E69 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		D5AE6F0E1F87DF8E00F48E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5AE6F141F87DF8E00F48E69 /* libWeCheatDevDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libWeCheatDevDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5AE6F191F87DF8E00F48E69 /* Cycript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cycript.framework; path = Library/Frameworks/Cycript.framework; sourceTree = DEVELOPER_DIR; };
+		D5AE6F1B1F87DF8E00F48E69 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		D5AE6F1D1F87DF8E00F48E69 /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RevealServer.framework; path = Library/Frameworks/RevealServer.framework; sourceTree = DEVELOPER_DIR; };
+		D5AE6F1F1F87DF8E00F48E69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D5AE6F211F87DF8E00F48E69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D5AE6F251F87DF8E00F48E69 /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = MethodTrace/ANYMethodLog.h; sourceTree = "<group>"; };
+		D5AE6F271F87DF8E00F48E69 /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = MethodTrace/ANYMethodLog.m; sourceTree = "<group>"; };
+		D5AE6F291F87DF8E00F48E69 /* MethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MethodTrace.h; path = MethodTrace/MethodTrace.h; sourceTree = "<group>"; };
+		D5AE6F2B1F87DF8E00F48E69 /* MethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MethodTrace.m; path = MethodTrace/MethodTrace.m; sourceTree = "<group>"; };
+		D5AE6F2E1F87DF8E00F48E69 /* WeCheatDevDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeCheatDevDylib-Prefix.pch"; sourceTree = "<group>"; };
+		D5AE6F301F87DF8E00F48E69 /* CaptainHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CaptainHook.h; path = CaptainHook/CaptainHook.h; sourceTree = "<group>"; };
+		D5AE6F331F87DF8E00F48E69 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		D5AE6F361F87DF8E00F48E69 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		D5AE6F381F87DF8E00F48E69 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		D5AE6F3A1F87DF8E00F48E69 /* WeCheatDevDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WeCheatDevDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		D5AE6F3B1F87DF8E00F48E69 /* WeCheatDevDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WeCheatDevDylib.mm; sourceTree = "<group>"; };
+		D5AE6F3D1F87DF8E00F48E69 /* WeCheatDevDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeCheatDevDylib.h; sourceTree = "<group>"; };
+		D5AE6F3F1F87DF8E00F48E69 /* WeCheatDevDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeCheatDevDylib.m; sourceTree = "<group>"; };
+		D5AE6F491F87DFB600F48E69 /* wechat.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; name = wechat.ipa; path = TargetApp/wechat.ipa; sourceTree = "<group>"; };
+		D5AE6F4C1F87DFD700F48E69 /* WeChatHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatHeader.h; sourceTree = "<group>"; };
+		D5AE6F4D1F87DFD700F48E69 /* WeChatUIHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatUIHeader.h; sourceTree = "<group>"; };
+		D5AE6F511F87DFE200F48E69 /* WECMessageHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WECMessageHook.m; sourceTree = "<group>"; };
+		D5AE6F521F87DFE200F48E69 /* WECSportStepHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WECSportStepHook.m; sourceTree = "<group>"; };
+		D5AE6F531F87DFE200F48E69 /* WECUIFindHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WECUIFindHook.m; sourceTree = "<group>"; };
+		D5AE6F541F87DFE200F48E69 /* WECUINightModeHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WECUINightModeHook.m; sourceTree = "<group>"; };
+		D5AE6F5A1F87DFED00F48E69 /* WeChatServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatServiceManager.h; sourceTree = "<group>"; };
+		D5AE6F5B1F87DFED00F48E69 /* WeChatServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatServiceManager.m; sourceTree = "<group>"; };
+		D5AE6F5F1F87DFFD00F48E69 /* WeChatpluginConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatpluginConfig.h; sourceTree = "<group>"; };
+		D5AE6F601F87DFFD00F48E69 /* WeChatpluginConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatpluginConfig.m; sourceTree = "<group>"; };
+		D5AE6F631F87E0A900F48E69 /* WeCheatConfigCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeCheatConfigCenter.h; sourceTree = "<group>"; };
+		D5AE6F641F87E0A900F48E69 /* WeCheatConfigCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeCheatConfigCenter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5AE6F001F87DF8E00F48E69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5AE6F111F87DF8E00F48E69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5AE6F1C1F87DF8E00F48E69 /* JavaScriptCore.framework in Frameworks */,
+				D5AE6F1E1F87DF8E00F48E69 /* RevealServer.framework in Frameworks */,
+				D5AE6F1A1F87DF8E00F48E69 /* Cycript.framework in Frameworks */,
+				D5AE6F201F87DF8E00F48E69 /* Foundation.framework in Frameworks */,
+				D5AE6F221F87DF8E00F48E69 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5AE6EFA1F87DF8E00F48E69 = {
+			isa = PBXGroup;
+			children = (
+				D5AE6F081F87DF8E00F48E69 /* WeCheatDev */,
+				D5AE6F231F87DF8E00F48E69 /* WeCheatDevDylib */,
+				D5AE6F181F87DF8E00F48E69 /* Frameworks */,
+				D5AE6F071F87DF8E00F48E69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5AE6F071F87DF8E00F48E69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5AE6F061F87DF8E00F48E69 /* WeCheatDev.app */,
+				D5AE6F141F87DF8E00F48E69 /* libWeCheatDevDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5AE6F081F87DF8E00F48E69 /* WeCheatDev */ = {
+			isa = PBXGroup;
+			children = (
+				D5AE6F091F87DF8E00F48E69 /* MethodTraceConfig.plist */,
+				D5AE6F0E1F87DF8E00F48E69 /* Info.plist */,
+				D5AE6F0B1F87DF8E00F48E69 /* TargetApp */,
+			);
+			path = WeCheatDev;
+			sourceTree = "<group>";
+		};
+		D5AE6F0B1F87DF8E00F48E69 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				D5AE6F491F87DFB600F48E69 /* wechat.ipa */,
+				D5AE6F0C1F87DF8E00F48E69 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		D5AE6F181F87DF8E00F48E69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5AE6F191F87DF8E00F48E69 /* Cycript.framework */,
+				D5AE6F1B1F87DF8E00F48E69 /* JavaScriptCore.framework */,
+				D5AE6F1D1F87DF8E00F48E69 /* RevealServer.framework */,
+				D5AE6F1F1F87DF8E00F48E69 /* Foundation.framework */,
+				D5AE6F211F87DF8E00F48E69 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5AE6F231F87DF8E00F48E69 /* WeCheatDevDylib */ = {
+			isa = PBXGroup;
+			children = (
+				D5AE6F5E1F87DFFD00F48E69 /* Config */,
+				D5AE6F591F87DFED00F48E69 /* Manager */,
+				D5AE6F501F87DFE200F48E69 /* Hook */,
+				D5AE6F4B1F87DFD700F48E69 /* Header */,
+				D5AE6F3A1F87DF8E00F48E69 /* WeCheatDevDylib.xm */,
+				D5AE6F3B1F87DF8E00F48E69 /* WeCheatDevDylib.mm */,
+				D5AE6F3D1F87DF8E00F48E69 /* WeCheatDevDylib.h */,
+				D5AE6F3F1F87DF8E00F48E69 /* WeCheatDevDylib.m */,
+				D5AE6F631F87E0A900F48E69 /* WeCheatConfigCenter.h */,
+				D5AE6F641F87E0A900F48E69 /* WeCheatConfigCenter.m */,
+				D5AE6F241F87DF8E00F48E69 /* MethodTrace */,
+				D5AE6F2F1F87DF8E00F48E69 /* CaptainHook */,
+				D5AE6F321F87DF8E00F48E69 /* AntiAntiDebug */,
+				D5AE6F351F87DF8E00F48E69 /* fishhook */,
+				D5AE6F2D1F87DF8E00F48E69 /* Supporting Files */,
+			);
+			path = WeCheatDevDylib;
+			sourceTree = "<group>";
+		};
+		D5AE6F241F87DF8E00F48E69 /* MethodTrace */ = {
+			isa = PBXGroup;
+			children = (
+				D5AE6F251F87DF8E00F48E69 /* ANYMethodLog.h */,
+				D5AE6F271F87DF8E00F48E69 /* ANYMethodLog.m */,
+				D5AE6F291F87DF8E00F48E69 /* MethodTrace.h */,
+				D5AE6F2B1F87DF8E00F48E69 /* MethodTrace.m */,
+			);
+			name = MethodTrace;
+			sourceTree = "<group>";
+		};
+		D5AE6F2D1F87DF8E00F48E69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5AE6F2E1F87DF8E00F48E69 /* WeCheatDevDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5AE6F2F1F87DF8E00F48E69 /* CaptainHook */ = {
+			isa = PBXGroup;
+			children = (
+				D5AE6F301F87DF8E00F48E69 /* CaptainHook.h */,
+			);
+			name = CaptainHook;
+			sourceTree = "<group>";
+		};
+		D5AE6F321F87DF8E00F48E69 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				D5AE6F331F87DF8E00F48E69 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		D5AE6F351F87DF8E00F48E69 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				D5AE6F361F87DF8E00F48E69 /* fishhook.c */,
+				D5AE6F381F87DF8E00F48E69 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		D5AE6F4B1F87DFD700F48E69 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				D5AE6F4C1F87DFD700F48E69 /* WeChatHeader.h */,
+				D5AE6F4D1F87DFD700F48E69 /* WeChatUIHeader.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		D5AE6F501F87DFE200F48E69 /* Hook */ = {
+			isa = PBXGroup;
+			children = (
+				D5AE6F531F87DFE200F48E69 /* WECUIFindHook.m */,
+				D5AE6F511F87DFE200F48E69 /* WECMessageHook.m */,
+				D5AE6F521F87DFE200F48E69 /* WECSportStepHook.m */,
+				D5AE6F541F87DFE200F48E69 /* WECUINightModeHook.m */,
+			);
+			path = Hook;
+			sourceTree = "<group>";
+		};
+		D5AE6F591F87DFED00F48E69 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D5AE6F5A1F87DFED00F48E69 /* WeChatServiceManager.h */,
+				D5AE6F5B1F87DFED00F48E69 /* WeChatServiceManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D5AE6F5E1F87DFFD00F48E69 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D5AE6F5F1F87DFFD00F48E69 /* WeChatpluginConfig.h */,
+				D5AE6F601F87DFFD00F48E69 /* WeChatpluginConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D5AE6F121F87DF8E00F48E69 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5AE6F261F87DF8E00F48E69 /* ANYMethodLog.h in Headers */,
+				D5AE6F4E1F87DFD700F48E69 /* WeChatHeader.h in Headers */,
+				D5AE6F311F87DF8E00F48E69 /* CaptainHook.h in Headers */,
+				D5AE6F651F87E0A900F48E69 /* WeCheatConfigCenter.h in Headers */,
+				D5AE6F3E1F87DF8E00F48E69 /* WeCheatDevDylib.h in Headers */,
+				D5AE6F5C1F87DFED00F48E69 /* WeChatServiceManager.h in Headers */,
+				D5AE6F2A1F87DF8E00F48E69 /* MethodTrace.h in Headers */,
+				D5AE6F4F1F87DFD700F48E69 /* WeChatUIHeader.h in Headers */,
+				D5AE6F391F87DF8E00F48E69 /* fishhook.h in Headers */,
+				D5AE6F611F87DFFD00F48E69 /* WeChatpluginConfig.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D5AE6F051F87DF8E00F48E69 /* WeCheatDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5AE6F461F87DF8E00F48E69 /* Build configuration list for PBXNativeTarget "WeCheatDev" */;
+			buildPhases = (
+				D5AE6EFF1F87DF8E00F48E69 /* Sources */,
+				D5AE6F001F87DF8E00F48E69 /* Frameworks */,
+				D5AE6F011F87DF8E00F48E69 /* ShellScript */,
+				D5AE6F021F87DF8E00F48E69 /* Resources */,
+				D5AE6F031F87DF8E00F48E69 /* CopyFiles */,
+				D5AE6F041F87DF8E00F48E69 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5AE6F171F87DF8E00F48E69 /* PBXTargetDependency */,
+			);
+			name = WeCheatDev;
+			productName = WeCheatDev;
+			productReference = D5AE6F061F87DF8E00F48E69 /* WeCheatDev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5AE6F131F87DF8E00F48E69 /* WeCheatDevDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5AE6F431F87DF8E00F48E69 /* Build configuration list for PBXNativeTarget "WeCheatDevDylib" */;
+			buildPhases = (
+				D5AE6F0F1F87DF8E00F48E69 /* ShellScript */,
+				D5AE6F101F87DF8E00F48E69 /* Sources */,
+				D5AE6F111F87DF8E00F48E69 /* Frameworks */,
+				D5AE6F121F87DF8E00F48E69 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeCheatDevDylib;
+			productName = WeCheatDevDylib;
+			productReference = D5AE6F141F87DF8E00F48E69 /* libWeCheatDevDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5AE6EFB1F87DF8E00F48E69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Desgard_Duan;
+				TargetAttributes = {
+					D5AE6F051F87DF8E00F48E69 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					D5AE6F131F87DF8E00F48E69 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D5AE6EFE1F87DF8E00F48E69 /* Build configuration list for PBXProject "WeCheatDev" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D5AE6EFA1F87DF8E00F48E69;
+			productRefGroup = D5AE6F071F87DF8E00F48E69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5AE6F051F87DF8E00F48E69 /* WeCheatDev */,
+				D5AE6F131F87DF8E00F48E69 /* WeCheatDevDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5AE6F021F87DF8E00F48E69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5AE6F0D1F87DF8E00F48E69 /* put ipa or app here in Resources */,
+				D5AE6F4A1F87DFB600F48E69 /* wechat.ipa in Resources */,
+				D5AE6F0A1F87DF8E00F48E69 /* MethodTraceConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D5AE6F011F87DF8E00F48E69 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		D5AE6F041F87DF8E00F48E69 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		D5AE6F0F1F87DF8E00F48E69 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5AE6EFF1F87DF8E00F48E69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5AE6F101F87DF8E00F48E69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5AE6F621F87DFFD00F48E69 /* WeChatpluginConfig.m in Sources */,
+				D5AE6F581F87DFE300F48E69 /* WECUINightModeHook.m in Sources */,
+				D5AE6F341F87DF8E00F48E69 /* AntiAntiDebug.m in Sources */,
+				D5AE6F561F87DFE300F48E69 /* WECSportStepHook.m in Sources */,
+				D5AE6F3C1F87DF8E00F48E69 /* WeCheatDevDylib.mm in Sources */,
+				D5AE6F661F87E0A900F48E69 /* WeCheatConfigCenter.m in Sources */,
+				D5AE6F2C1F87DF8E00F48E69 /* MethodTrace.m in Sources */,
+				D5AE6F371F87DF8E00F48E69 /* fishhook.c in Sources */,
+				D5AE6F551F87DFE300F48E69 /* WECMessageHook.m in Sources */,
+				D5AE6F5D1F87DFED00F48E69 /* WeChatServiceManager.m in Sources */,
+				D5AE6F401F87DF8E00F48E69 /* WeCheatDevDylib.m in Sources */,
+				D5AE6F571F87DFE300F48E69 /* WECUIFindHook.m in Sources */,
+				D5AE6F281F87DF8E00F48E69 /* ANYMethodLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5AE6F171F87DF8E00F48E69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5AE6F131F87DF8E00F48E69 /* WeCheatDevDylib */;
+			targetProxy = D5AE6F161F87DF8E00F48E69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D5AE6F411F87DF8E00F48E69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D5AE6F421F87DF8E00F48E69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5AE6F441F87DF8E00F48E69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DNL5G5M9A8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeCheatDevDylib/WeCheatDevDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libWeCheatDevDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"WeCheatDevDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		D5AE6F451F87DF8E00F48E69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = DNL5G5M9A8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeCheatDevDylib/WeCheatDevDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libWeCheatDevDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"WeCheatDevDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D5AE6F471F87DF8E00F48E69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DNL5G5M9A8;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WeCheatDev/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = farm.gua.WeCheatDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5AE6F481F87DF8E00F48E69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DNL5G5M9A8;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WeCheatDev/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = farm.gua.WeCheatDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5AE6EFE1F87DF8E00F48E69 /* Build configuration list for PBXProject "WeCheatDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5AE6F411F87DF8E00F48E69 /* Debug */,
+				D5AE6F421F87DF8E00F48E69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5AE6F431F87DF8E00F48E69 /* Build configuration list for PBXNativeTarget "WeCheatDevDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5AE6F441F87DF8E00F48E69 /* Debug */,
+				D5AE6F451F87DF8E00F48E69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5AE6F461F87DF8E00F48E69 /* Build configuration list for PBXNativeTarget "WeCheatDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5AE6F471F87DF8E00F48E69 /* Debug */,
+				D5AE6F481F87DF8E00F48E69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5AE6EFB1F87DF8E00F48E69 /* Project object */;
+}
