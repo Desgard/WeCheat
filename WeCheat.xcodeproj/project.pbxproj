@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		750149E81F878BBB00D3BC08 /* WeCheatConfigCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 750149E61F878BBB00D3BC08 /* WeCheatConfigCenter.h */; };
+		750149E91F878BBB00D3BC08 /* WeCheatConfigCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 750149E71F878BBB00D3BC08 /* WeCheatConfigCenter.m */; };
+		750149EA1F878BBB00D3BC08 /* WeCheatConfigCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 750149E71F878BBB00D3BC08 /* WeCheatConfigCenter.m */; };
+		750149EC1F878E7000D3BC08 /* WECUIConfigHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 750149EB1F878E7000D3BC08 /* WECUIConfigHook.m */; };
+		750149ED1F878E7000D3BC08 /* WECUIConfigHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 750149EB1F878E7000D3BC08 /* WECUIConfigHook.m */; };
 		7590C91E1F678CAE00E1184B /* WECUIFindHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 7590C91D1F678CAE00E1184B /* WECUIFindHook.m */; };
 		7590C9201F678CB300E1184B /* WECSportStepHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 7590C91F1F678CB300E1184B /* WECSportStepHook.m */; };
 		75D4FF891F676A1900CACDD6 /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = 75D4FF881F676A1900CACDD6 /* put ipa or app here */; };
@@ -32,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		750149E61F878BBB00D3BC08 /* WeCheatConfigCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeCheatConfigCenter.h; sourceTree = "<group>"; };
+		750149E71F878BBB00D3BC08 /* WeCheatConfigCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeCheatConfigCenter.m; sourceTree = "<group>"; };
+		750149EB1F878E7000D3BC08 /* WECUIConfigHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WECUIConfigHook.m; path = Hook/WECUIConfigHook.m; sourceTree = "<group>"; };
 		7556FC321F67D69F0008D6F1 /* WeChatUIHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WeChatUIHeader.h; path = Header/WeChatUIHeader.h; sourceTree = "<group>"; };
 		7590C91D1F678CAE00E1184B /* WECUIFindHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WECUIFindHook.m; path = Hook/WECUIFindHook.m; sourceTree = "<group>"; };
 		7590C91F1F678CB300E1184B /* WECSportStepHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WECSportStepHook.m; path = Hook/WECSportStepHook.m; sourceTree = "<group>"; };
@@ -148,6 +156,8 @@
 				75D4FFAB1F676A1900CACDD6 /* WeCheatDylib.mm */,
 				75D4FFAD1F676A1900CACDD6 /* WeCheatDylib.h */,
 				75D4FFAF1F676A1900CACDD6 /* WeCheatDylib.m */,
+				750149E61F878BBB00D3BC08 /* WeCheatConfigCenter.h */,
+				750149E71F878BBB00D3BC08 /* WeCheatConfigCenter.m */,
 				75D4FF9F1F676A1900CACDD6 /* CaptainHook */,
 				75D4FFA21F676A1900CACDD6 /* AntiAntiDebug */,
 				75D4FFA51F676A1900CACDD6 /* fishhook */,
@@ -196,6 +206,7 @@
 				7590C91F1F678CB300E1184B /* WECSportStepHook.m */,
 				7590C91D1F678CAE00E1184B /* WECUIFindHook.m */,
 				D5A1404F1F72C2B500820F0A /* WECUINightModeHook.m */,
+				750149EB1F878E7000D3BC08 /* WECUIConfigHook.m */,
 			);
 			name = Hook;
 			sourceTree = "<group>";
@@ -237,6 +248,7 @@
 				75D4FFA11F676A1900CACDD6 /* CaptainHook.h in Headers */,
 				75D4FFA91F676A1900CACDD6 /* fishhook.h in Headers */,
 				75D4FFAE1F676A1900CACDD6 /* WeCheatDylib.h in Headers */,
+				750149E81F878BBB00D3BC08 /* WeCheatConfigCenter.h in Headers */,
 				75D4FFC31F676C7D00CACDD6 /* WeChatpluginConfig.h in Headers */,
 				75D4FFC91F676D6600CACDD6 /* WeChatServiceManager.h in Headers */,
 			);
@@ -380,6 +392,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				750149EC1F878E7000D3BC08 /* WECUIConfigHook.m in Sources */,
+				750149E91F878BBB00D3BC08 /* WeCheatConfigCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				750149ED1F878E7000D3BC08 /* WECUIConfigHook.m in Sources */,
 				D5A140501F72C2B500820F0A /* WECUINightModeHook.m in Sources */,
 				75D4FFC41F676C7D00CACDD6 /* WeChatpluginConfig.m in Sources */,
 				7590C91E1F678CAE00E1184B /* WECUIFindHook.m in Sources */,
@@ -396,6 +411,7 @@
 				7590C9201F678CB300E1184B /* WECSportStepHook.m in Sources */,
 				75D4FFA41F676A1900CACDD6 /* AntiAntiDebug.m in Sources */,
 				75D4FFB01F676A1900CACDD6 /* WeCheatDylib.m in Sources */,
+				750149EA1F878BBB00D3BC08 /* WeCheatConfigCenter.m in Sources */,
 				75D4FFAC1F676A1900CACDD6 /* WeCheatDylib.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

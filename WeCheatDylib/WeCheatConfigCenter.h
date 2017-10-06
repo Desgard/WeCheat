@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WeCheatConfigCenter : NSObject
+@interface WeCheatConfigCenter : NSObject<NSCoding>
+
+@property(nonatomic) BOOL isNightMode;
+@property(nonatomic) NSUInteger stepCount;
+@property(nonatomic) BOOL isRevokeMsg;
+
++ (instancetype)shareInstance;
 
 @end
