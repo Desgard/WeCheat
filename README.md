@@ -16,11 +16,7 @@
 
 ## Screenshot
 
-![](/screenshot/nigth-mode.png)
-**Night Mode**
-
-![](/screenshot/setting.png)
-**Setting**
+![Night Mode](/screenshot/nigth-mode.png)![Setting](/screenshot/setting.png)
 
 
 ## GNU General Public License v3.0
