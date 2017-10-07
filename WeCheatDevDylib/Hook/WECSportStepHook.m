@@ -13,8 +13,8 @@ CMStepQueryHandler origHandler = nil;
 
 CMStepQueryHandler newHandler = ^(NSInteger numberSteps, NSError *error){
     NSLog(@"获取到的步数  %lu", numberSteps);
-    if(pluginConfig.stepCount != 0) {
-        numberSteps = pluginConfig.stepCount;
+    if([WeCheatConfigCenter shareInstance].stepCount != 0) {
+        numberSteps = [WeCheatConfigCenter shareInstance].stepCount;
     }
     // 此处可以修改步数
     // 希望可以通过UI 方式动态注入数据

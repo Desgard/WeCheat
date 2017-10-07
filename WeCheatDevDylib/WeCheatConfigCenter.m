@@ -15,7 +15,7 @@
     if (self) {
         self.isRevokeMsg = NO;
         self.isNightMode = NO;
-        self.stepCount = 100;
+        self.stepCount = 0;
     }
     return self;
 }
@@ -36,6 +36,10 @@
 
 - (void)handleRevokeMsg:(UISwitch *)sender {
     self.isRevokeMsg = sender.isOn;
+}
+
+- (void)handleStepCount:(UITextField *)sender {
+    
 }
 
 #pragma MARK - NSCoding

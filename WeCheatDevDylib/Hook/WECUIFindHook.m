@@ -42,16 +42,24 @@ CHOptimizedMethod0(self, void, NewSettingViewController, reloadTableData) {
     
     MMTableViewInfo *tableInfo = CHIvar(self, m_tableViewInfo, __strong MMTableViewInfo *);
     MMTableViewSectionInfo *pluginSection = [objc_getClass("MMTableViewSectionInfo") sectionInfoDefaut];
-    MMTableViewCellInfo *nightModeCellInfo = [objc_getClass("MMTableViewCellInfo") switchCellForSel:@selector(handleNightMode:)
-                                                                                             target:[WeCheatConfigCenter shareInstance]
-                                                                                              title:@"Night Mode"
-                                                                                                 on:[WeCheatConfigCenter shareInstance].isNightMode];
     MMTableViewCellInfo *revokeMsgCellInfo = [objc_getClass("MMTableViewCellInfo") switchCellForSel:@selector(handleRevokeMsg:)
                                                                                              target:[WeCheatConfigCenter shareInstance]
                                                                                               title:@"Intercept Revoke Message"
                                                                                                  on:[WeCheatConfigCenter shareInstance].isNightMode];
-    [pluginSection addCell:nightModeCellInfo];
+    MMTableViewCellInfo *nightModeCellInfo = [objc_getClass("MMTableViewCellInfo") switchCellForSel:@selector(handleNightMode:)
+                                                                                             target:[WeCheatConfigCenter shareInstance]
+                                                                                              title:@"Night Mode(Beta)"
+                                                                                                 on:[WeCheatConfigCenter shareInstance].isNightMode];
+    MMTableViewCellInfo *stepcountCellInfo = [objc_getClass("MMTableViewCellInfo") editorCellForSel:@selector(handleStepCount:)
+                                                                                             target:[WeCheatConfigCenter shareInstance]
+                                                                                              title:@"Change Step"
+                                                                                             margin:30
+                                                                                                tip:@"步数"
+                                                                                              focus:NO
+                                                                                               text:[NSString stringWithFormat:@"%ld", (long)[WeCheatConfigCenter shareInstance].stepCount]];
     [pluginSection addCell:revokeMsgCellInfo];
+    [pluginSection addCell:stepcountCellInfo];
+    [pluginSection addCell:nightModeCellInfo];
     [tableInfo insertSection:pluginSection At:0];
     MMTableView *tableView = [tableInfo getTableView];
     [tableView reloadData];

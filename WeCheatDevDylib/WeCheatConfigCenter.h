@@ -18,5 +18,6 @@
 + (instancetype)shareInstance;
 - (void)handleNightMode:(UISwitch *)sender;
 - (void)handleRevokeMsg:(UISwitch *)sender;
+- (void)handleStepCount:(UITextField *)sender;
 
 @end
